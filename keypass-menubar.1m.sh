@@ -103,10 +103,7 @@ if [ "$1" = "add" ]; then
     openssl enc -aes-256-cbc -salt -pbkdf2 -iter 100000 \
         -in /tmp/keypass_add.tmp -out "$VAULT_FILE" -pass pass:"$MASTER_PASS" 2>/dev/null
     chmod 600 "$VAULT_FILE"
- ==============================================================================
-# ACTION: DELETE PASSWORD
-#==============================================================================
-
+    
     rm -f /tmp/keypass_add.tmp
     
     osascript -e "display notification \"Password saved successfully\" with title \"KeyPass\" subtitle \"$name\""
@@ -114,7 +111,10 @@ if [ "$1" = "add" ]; then
     exit 0
 fi
 
-# Handle deleting password via dialog
+#==============================================================================
+# ACTION: DELETE PASSWORD
+#==============================================================================
+
 if [ "$1" = "delete" ]; then
     if [ ! -f "$MASTER_PASS_FILE" ]; then
         MASTER_PASS=$(osascript -e 'Tell application "System Events" to display dialog "Enter master password:" default answer "" with title "KeyPass - Unlock Vault" with hidden answer' -e 'text returned of result' 2>/dev/null)
@@ -275,7 +275,7 @@ if [ "$1" = "copy" ] && [ -n "$2" ]; then
                 ) &
             fi
             
- ==============================================================================
+#==============================================================================
 # MENU BAR DISPLAY
 #==============================================================================
         fi
