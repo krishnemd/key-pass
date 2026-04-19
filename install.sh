@@ -3,7 +3,7 @@
 # KeyPass Quick Installer
 # This adds keypass to your PATH so you can use it from anywhere
 
-INSTALL_DIR="/Users/krishna.dhakal/Desktop/key-pass"
+INSTALL_DIR="$(cd "$(dirname "$0")" && pwd)"
 SHELL_RC="$HOME/.zshrc"
 
 echo "╔═══════════════════════════════════════╗"
