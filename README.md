@@ -319,13 +319,14 @@ chmod +x keypass.sh
 
 ### Create Alias (Optional)
 
-Add to your `~/.zshrc`:
+Run the installer to add `keypass` to your PATH:
 
 ```bash
-alias keypass='/Users/krishna.dhakal/Desktop/key-pass/keypass.sh'
+./install.sh
+source ~/.zshrc
 ```
 
-Then just run `keypass` from anywhere!
+Then just run `keypass` or `kp` from anywhere!
 
 ## Technical Details
 
