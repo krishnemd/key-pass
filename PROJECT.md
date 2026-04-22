@@ -92,8 +92,9 @@ vault.enc → Decryption (with master) → Clipboard → Auto-clear (30s)
 ### SwiftBar Install
 ```
 1. brew install swiftbar
-2. cp keypass-menubar.1m.sh ~/.swiftbar-plugins/
-3. Click 🔐 icon
+2. mkdir -p ~/.swiftbar-plugins/
+3. cp keypass-menubar.1m.sh ~/.swiftbar-plugins/
+4. Click 🔐 icon
 ```
 
 ---
