@@ -56,6 +56,7 @@ $ kp delete       # Delete password
 **Setup (one-time):**
 ```bash
 brew install swiftbar
+mkdir -p ~/.swiftbar-plugins/
 cp keypass-menubar.1m.sh ~/.swiftbar-plugins/
 open -a SwiftBar
 ```
@@ -157,6 +158,7 @@ zip -r keypass.zip keypass install.sh keypass-menubar.1m.sh README.md
 ```bash
 # They need SwiftBar
 brew install swiftbar
+mkdir -p ~/.swiftbar-plugins/
 cp keypass-menubar.1m.sh ~/.swiftbar-plugins/
 ```
 
