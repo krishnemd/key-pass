@@ -4,13 +4,16 @@
 
 ```
 key-pass/                          (36 KB total)
+├── ARCHITECTURE.md               (3.0 KB) - Mermaid architecture and runtime docs
 ├── README.md                      (6.6 KB) - Complete documentation
 ├── keypass                        (8.3 KB) - Main CLI tool
 ├── keypass-menubar.1m.sh          (11 KB)  - SwiftBar plugin
 └── install.sh                     (1.9 KB) - PATH installer
 ```
 
-**Clean & minimal:** 4 files, zero dependencies, ready to share!
+**Documentation:** See [ARCHITECTURE.md](ARCHITECTURE.md) for the Mermaid architecture diagram and runtime data flow.
+
+**Clean & minimal:** 5 files, zero dependencies, ready to share!
 
 ---
 

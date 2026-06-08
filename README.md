@@ -96,6 +96,16 @@ open -a SwiftBar
 - ⌨️ Terminal access
 - 📱 macOS notifications
 
+## 🧩 Architecture
+
+KeyPass is built from three shell scripts that share the same encrypted vault:
+
+- [Architecture overview](ARCHITECTURE.md) documents the runtime flow.
+- It includes the Mermaid diagram for the CLI, menu bar plugin, clipboard, notifications, and storage.
+- It also describes the vault layout and record formats.
+
+Use the architecture doc when you want the implementation map instead of the marketing-style overview below.
+
 ---
 
 ## 📖 Usage Examples
